@@ -21,8 +21,7 @@ def start_server(host='localhost', port=5000):
             try:
                 conn, addr = server_socket.accept()
                 with conn:
-                    print(f"Connected by {addr}")
-                    data = conn.recv(1024).decode('utf-8')
+                    data = conn.recv(4000).decode('utf-8')
                     if not data:
                         break
                     response = process_data(data)
@@ -30,7 +29,7 @@ def start_server(host='localhost', port=5000):
             except socket.timeout:
                 continue
     except KeyboardInterrupt:
-        print("\nServer stopped.")
+        print("\nMicroservice stopped.")
     finally:
         server_socket.close()
 
