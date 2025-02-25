@@ -10,7 +10,7 @@ def test_client(host='localhost', port=5000):
         print(test_data)
 
         client_socket.sendall(test_data.encode('utf-8'))
-        response = client_socket.recv(1024).decode('utf-8')
+        response = client_socket.recv(4000).decode('utf-8')
         print("Response:")
         print(response)
 
