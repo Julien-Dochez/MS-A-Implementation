@@ -4,7 +4,7 @@ Requirements:
 - python installed
 - import socket and json into main program
 
-A. Steps to Request Data:
+**A. Steps to Request Data:**
 - Create a Socket
 Example Code:
 
@@ -54,7 +54,7 @@ if __name__ == "__main__":
 The microservice must be running on the same localhost and port for this call to function
 
 
-B. How to Receive Data:
+**B. How to Receive Data:**
 - Connect to the Microservice
 Example Code:
 
@@ -76,4 +76,5 @@ if __name__ == "__main__":
 
 This example call is used in the microservice which starts the microservice itself.
 
+**C. UML Diagram**
 ![alt text](image.png)
