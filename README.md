@@ -75,3 +75,5 @@ if __name__ == "__main__":
     start_server()
 
 This example call is used in the microservice which starts the microservice itself.
+
+![alt text](image.png)
